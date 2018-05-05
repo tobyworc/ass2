@@ -12,7 +12,7 @@ var screenClicked = 0;
 //document.getElementById("score").innerHTML = score
 //document.getElementById("lives").innerHTML = lives
 
-	window.onload = function(){
+	$(document).on('pageinit', function(){
 	$("#GameCanvas").hide();	
 	$("#Display").hide();
 	startScreen();
