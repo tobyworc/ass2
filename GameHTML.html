@@ -1,0 +1,114 @@
+<html>
+	<head>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+		<script type = "text/javascript" src="GameJS.js">
+		
+		</script>
+		
+		<script type = "text/javascript" src="highscore.js">
+		
+		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<meta charset="utf-8"/>
+		
+	</head>
+	<body>
+	
+	<!-- Page 1 -->
+
+	<div data-role="page" id="HomePage">
+
+	<!-- Header -->
+
+  <div data-role="header">
+  <a href="#HomePanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Menu</a>
+    <h1 id="ScoreDisplay">Score : </h1>
+  </div>
+  
+  <!-- Panel -->
+    <div data-role="panel" id="HomePanel"> 
+    <h2>Panel Header</h2>
+    
+	<a href="#HomePage" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Play</a> <br/>
+	<a href="#HighScores" id="HSbutton" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">View highscores</a> <br/>
+
+	
+	<!-- Close panel button -->
+	<a data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+  </div> 
+
+	<!-- Main body -->
+  
+  <div id="mainDiv" style="width:100%" data-role="main" class="ui-content">
+	<canvas id = "GameCanvas" width="600" height="280" style="border:5px solid yellow;" tabindex="1">
+	</canvas>
+	
+<div>
+	<input id="startButton" type="button" value="Start Game"/> 
+	<input id="quitButton" type="button" value="Quit Game"/>
+	</div>
+	
+</div>
+	<!-- Footer -->
+  
+  <div data-role="footer" data-position="fixed" >
+     <h1 id="LivesDisplay">Lives:</h1>
+  </div>
+</div> 
+
+<!-- Page 2 -->
+
+<div data-role="page" id="HighScores">
+
+	<!-- Header -->
+
+  <div data-role="header">
+  <a href="#HighScorePanel" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-left ui-corner-all ui-shadow ui-btn-icon-notext">Menu</a>
+    <h1>Highscores</h1>
+  </div>
+  
+  <!-- Panel -->
+  
+  <div data-role="panel" id="HighScorePanel"> 
+    <h2>Panel Header</h2>
+    
+	<a href="#HomePage" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Play</a> <br/>
+	<a href="#HighScores" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">View highscores</a> <br/>
+
+	
+	<!-- Close panel button -->
+	<a data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+  </div> 
+
+  <!-- Main body -->
+
+  <div data-role="main" class="ui-content">
+    <p>Highscores</p>
+  
+	<p id="hScore1">Highscore 1: </p>
+	<p id="hScore2">Highscore 2: </p>
+	<p id="hScore3">Highscore 3: </p>
+	<p id="hScore4">Highscore 4: </p>
+	<p id="hScore5">Highscore 5: </p>
+	
+  </div>
+  
+  
+  
+  <!-- Footer -->
+
+  <div data-role="footer" data-position="fixed">
+  <h1>Highscores</h1>
+  </div>
+</div> 
+	
+	</body>
+</html>
